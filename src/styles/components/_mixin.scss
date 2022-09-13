@@ -1,0 +1,19 @@
+@mixin button ($bg: white, $cl: #00aeda){
+    margin: 16px auto;
+    border: 1px solid $cl;
+    width: 100px;
+    height: 40px;
+    color: $cl;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: ease-in-out 0.4s;
+    &:hover{
+        background-color: $cl;
+        color: $bg;
+    }
+}
+@mixin mv ($media: 480px) {
+    @media screen and (max-width: $media) {
+        @content;
+    }
+}

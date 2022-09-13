@@ -4,7 +4,10 @@ import ChecksLeft from './components/CheckList';
 const App = () => {
   return (
     <div className="App">
-     <ChecksLeft/>
+      <main className='container'>
+        <h1 className='container__h1'>Titulo del proceso</h1>
+        <ChecksLeft/>
+      </main>
     </div>
   );
 }

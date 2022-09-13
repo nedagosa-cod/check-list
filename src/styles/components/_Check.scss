@@ -1,3 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: $t2-color;
+    &__h1{
+        color: $s-color;
+        font-size: 3.2rem;
+        text-shadow: -2px -2px 2px rgba(255, 255, 255, 0.6);
+    }
+}
 .checklist {
     position: relative;
     display: flex;
@@ -203,7 +217,7 @@
             text-shadow: -1px 1px 2px rgba(10, 10, 10, 0.6);
         }
         p{
-            margin-bottom: 24px;
+            margin-bottom: 5px;
         }
         i{
             font-size: 3rem;
@@ -220,7 +234,7 @@
             width: 60px;
             color: $w-color;
             line-height: 25px;
-            margin: 5px auto;
+            margin: 10px auto;
             background: $p-color;
             border-radius: 8px;
             -webkit-border-radius: 8px;
